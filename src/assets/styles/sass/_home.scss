@@ -1,0 +1,183 @@
+.home{
+
+    position: relative;
+
+    .overlay.active{
+        transition: .3s ease;
+        display: block;
+    }
+    
+
+    .today{
+        width: 100%;
+        margin-top: 20px;
+
+        ul{
+            display: inline-flex;
+            margin-bottom: 0px;
+            background-color: $white;
+            width: 88%;
+            position: relative;
+            border-radius: 10px;
+            li{
+
+                &:nth-of-type(1){
+                    position: absolute;
+                    left: 10px;
+                    top: 25px;
+                }
+
+                &:nth-of-type(2){
+                    display: block;
+                    margin-left: 15px;
+
+                    p{
+                        font-size: 15px;
+                        &:nth-of-type(1){
+                            margin-bottom: -5px;
+                        }
+                    }
+                }
+
+                &:nth-of-type(3){
+                    position: absolute;
+                    right: 10px;
+                    top: 20px;
+                    color: $green;
+                    background: white;
+                    padding: 10px;
+                    border-radius: 20px;
+                }
+            }
+        }
+
+        img{
+            border-radius: 20px;
+            width: 30px;
+            height: 30px;
+        }
+
+    }
+
+    .overlay{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 5;
+        top: -40px;
+        left: -24px;
+        background: rgba($color: #000000, $alpha: 0.8);
+        display: none;
+        transition: .3s ease;
+
+        .profile{
+            border: 1px solid $white;
+            text-align: center;
+            border-radius: 10px;
+            padding: 25px;
+            width: 71%;
+            margin-top: 100px;
+            transform: translateX( 8%);
+            background: $white;
+    
+            button{
+                background: transparent;
+                color: red;
+                border: 1px solid red;
+            }
+
+            img{
+                width: 70px;
+            }
+        }
+    }
+
+    button{
+        width: 100%;
+        border: 1px solid $green;
+        background: $green;
+        color: $white;
+        margin:20px 0;
+        box-shadow:0 3px 5px 3px rgb(219, 218, 218);
+    }
+
+    margin-top: 20px;
+
+    .home-header.sticky{
+        position: absolute;
+        z-index: 5;
+        top: 30px;
+        background: $white;
+        width: 100%;
+        transition: .3s ease;
+        padding:15px 25px;
+        left: -25px;
+        border-radius: 0 0 30px 30px;
+    }
+    .home-header{
+        position: relative;
+        transition: .3s ease;
+        
+        h3{
+            position: relative;
+            z-index: 3;
+            top: 30px;
+            
+        }
+
+        .icons{
+            color: gray;
+            float: right;
+            margin-top: -15px;
+
+            li{       
+                margin-left: 10px;  
+
+                .icon{
+                    height:30px;
+                }
+
+                img{
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 20px;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .home-nav{
+
+        margin-top: 40px;
+
+        h2{
+            position: relative;
+            top: 13px;
+            color: $dark-green;
+        }
+
+        nav{
+            background: $dark-gray;
+            padding-block:1px;
+            padding-inline: 15px;
+            border-radius: 40px;
+            margin-top: 30px;
+
+            ul{
+                display: flex;
+                justify-content: space-between;
+                margin-left: -40px;
+                font-size: 14px;
+
+                li{
+                    color: $green;
+                }
+            }
+        }
+
+    }
+}

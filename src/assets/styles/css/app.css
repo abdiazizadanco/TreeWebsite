@@ -1,0 +1,634 @@
+@font-face {
+  font-family: rubik;
+  src: url(../../font/Rubik-Regular.ttf);
+}
+.header {
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+@media screen and (max-width: 425px) {
+  .header {
+    display: none;
+  }
+}
+.header h2 {
+  color: whitesmoke;
+}
+.header .nav {
+  color: rgb(112, 180, 138);
+}
+.header .nav ul {
+  position: absolute;
+  right: 0;
+  margin-top: -40px;
+}
+.header .nav ul li {
+  margin-left: 20px;
+}
+.header .nav ul li:nth-of-type(5) {
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  color: whitesmoke;
+  border-radius: 5px;
+  margin-left: 300px;
+}
+.header .nav ul li:nth-of-type(5):hover {
+  cursor: pointer;
+  transform: scaleX(1.05);
+  transition: 0.3s ease;
+}
+
+.home {
+  position: relative;
+  margin-top: 20px;
+}
+.home .overlay.active {
+  transition: 0.3s ease;
+  display: block;
+}
+.home .today {
+  width: 100%;
+  margin-top: 20px;
+}
+.home .today ul {
+  display: inline-flex;
+  margin-bottom: 0px;
+  background-color: whitesmoke;
+  width: 88%;
+  position: relative;
+  border-radius: 10px;
+}
+.home .today ul li:nth-of-type(1) {
+  position: absolute;
+  left: 10px;
+  top: 25px;
+}
+.home .today ul li:nth-of-type(2) {
+  display: block;
+  margin-left: 15px;
+}
+.home .today ul li:nth-of-type(2) p {
+  font-size: 15px;
+}
+.home .today ul li:nth-of-type(2) p:nth-of-type(1) {
+  margin-bottom: -5px;
+}
+.home .today ul li:nth-of-type(3) {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  color: rgb(112, 180, 138);
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.home .today img {
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+}
+.home .overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+  top: -40px;
+  left: -24px;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  transition: 0.3s ease;
+}
+.home .overlay .profile {
+  border: 1px solid whitesmoke;
+  text-align: center;
+  border-radius: 10px;
+  padding: 25px;
+  width: 71%;
+  margin-top: 100px;
+  transform: translateX(8%);
+  background: whitesmoke;
+}
+.home .overlay .profile button {
+  background: transparent;
+  color: red;
+  border: 1px solid red;
+}
+.home .overlay .profile img {
+  width: 70px;
+}
+.home button {
+  width: 100%;
+  border: 1px solid rgb(112, 180, 138);
+  background: rgb(112, 180, 138);
+  color: whitesmoke;
+  margin: 20px 0;
+  box-shadow: 0 3px 5px 3px rgb(219, 218, 218);
+}
+.home .home-header.sticky {
+  position: absolute;
+  z-index: 5;
+  top: 30px;
+  background: whitesmoke;
+  width: 100%;
+  transition: 0.3s ease;
+  padding: 15px 25px;
+  left: -25px;
+  border-radius: 0 0 30px 30px;
+}
+.home .home-header {
+  position: relative;
+  transition: 0.3s ease;
+}
+.home .home-header h3 {
+  position: relative;
+  z-index: 3;
+  top: 30px;
+}
+.home .home-header .icons {
+  color: gray;
+  float: right;
+  margin-top: -15px;
+}
+.home .home-header .icons li {
+  margin-left: 10px;
+}
+.home .home-header .icons li .icon {
+  height: 30px;
+}
+.home .home-header .icons li img {
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+}
+.home .home-header .icons li img:hover {
+  cursor: pointer;
+}
+.home .home-nav {
+  margin-top: 40px;
+}
+.home .home-nav h2 {
+  position: relative;
+  top: 13px;
+  color: rgb(20, 80, 43);
+}
+.home .home-nav nav {
+  background: rgb(219, 217, 217);
+  padding-block: 1px;
+  padding-inline: 15px;
+  border-radius: 40px;
+  margin-top: 30px;
+}
+.home .home-nav nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -40px;
+  font-size: 14px;
+}
+.home .home-nav nav ul li {
+  color: rgb(112, 180, 138);
+}
+
+.hero {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 140px;
+}
+.hero .desktop-btn, .hero .more-btn {
+  border: 1px solid whitesmoke;
+}
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.hero .hero-text {
+  width: 80%;
+  margin-left: 10%;
+}
+.hero .hero-text p {
+  font-size: 18px;
+}
+.hero .hero-text h2 {
+  font-size: 50px;
+}
+.hero .mobile-content {
+  display: none;
+}
+.hero img {
+  position: absolute;
+  z-index: -3;
+  left: -85px;
+  top: -30px;
+  width: 100vw;
+  height: 65%;
+  opacity: 0.9;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 50px;
+}
+@media screen and (max-width: 425px) {
+  .hero {
+    position: absolute;
+    margin-top: 100%;
+  }
+  .hero .desktop-btn, .hero .more-btn {
+    display: none;
+  }
+  .hero .desktop-content {
+    display: none;
+  }
+  .hero .mobile-content {
+    display: block;
+  }
+  .hero .mobile-content button {
+    background-color: rgb(112, 180, 138);
+    color: whitesmoke;
+    border: 1px solid rgb(112, 180, 138);
+    width: 60%;
+    margin-top: 30px;
+    box-shadow: 2px 1px 3px rgb(112, 180, 138);
+  }
+  .hero .mobile-content p {
+    color: rgb(149, 179, 160);
+  }
+  .hero img {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: -26px;
+    top: -8px;
+    border-radius: 0;
+  }
+  .hero .hero-text h2 {
+    font-size: 25pt;
+  }
+  .hero .hero-text p {
+    font-size: 12pt;
+  }
+}
+
+.latest {
+  text-align: center;
+  margin-top: 50px;
+}
+.latest h2 {
+  margin-top: 30px;
+}
+.latest button {
+  background: transparent;
+  color: rgb(112, 180, 138);
+  border: 1px solid rgb(112, 180, 138);
+  margin-top: 30px;
+}
+
+.planting {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  color: rgb(93, 126, 105);
+}
+@media screen and (min-width: 768px) {
+  .planting {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+  }
+}
+.planting h2 {
+  color: rgb(112, 180, 138);
+}
+.planting ul {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(112, 180, 138);
+}
+.planting ul li:nth-of-type(1) {
+  margin-left: -35px;
+  color: whitesmoke;
+  background: rgb(112, 180, 138);
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 5px;
+  margin-top: -5px;
+  opacity: 0.6;
+}
+.planting ul li:nth-of-type(3) {
+  opacity: 0.8;
+}
+.planting .mob-nav {
+  background: rgb(238, 230, 230);
+  border-radius: 30px;
+  margin-top: 30px;
+}
+.planting .mob-nav ul small {
+  font-size: 20px;
+  opacity: 0.3;
+}
+.planting .mob-nav ul li {
+  padding: 5px;
+  background: whitesmoke;
+  width: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 40px;
+  padding-inline: 10px;
+}
+.planting .mob-nav ul li:nth-of-type(1) {
+  background: whitesmoke;
+  margin-left: -40px;
+  margin-top: 0;
+  color: rgb(112, 180, 138);
+  padding-inline: 10px;
+}
+.planting .mob-nav ul li a {
+  text-decoration: none;
+  color: rgb(112, 180, 138);
+}
+.planting .signup {
+  text-align: center;
+  margin-top: 40px;
+}
+.planting .signup h3 {
+  margin-top: 30px;
+}
+.planting .signup button {
+  width: 69%;
+  color: whitesmoke;
+  margin-top: 20px;
+  box-shadow: 0 3px 5px 3px rgb(219, 218, 218);
+}
+.planting .signup img {
+  width: 80%;
+}
+.planting .signup .g-btn {
+  background-color: rgb(170, 170, 223);
+  border: 1px solid rgb(170, 170, 223);
+}
+.planting .finish {
+  border: 1px solid rgb(238, 230, 230);
+  padding-block: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 30%;
+}
+.planting .finish .check-icon {
+  height: 35px;
+  color: whitesmoke;
+  background-color: rgb(112, 180, 138);
+  padding: 15px;
+  border: 1px solid rgb(112, 180, 138);
+  border-radius: 50px;
+}
+.planting .finish button {
+  color: rgb(112, 180, 138);
+  border: 1px solid rgb(112, 180, 138);
+  width: 70%;
+}
+
+.not-found {
+  text-align: center;
+  width: 50%;
+}
+.not-found button {
+  color: whitesmoke;
+  border: 1px solid rgb(112, 180, 138);
+  background: rgb(112, 180, 138);
+}
+.not-found button:hover {
+  background: rgb(112, 180, 138);
+  color: whitesmoke;
+  transition: 0.3s ease;
+  transform: scale(1.05);
+}
+@media screen and (min-width: 768px) {
+  .not-found {
+    transform: translateX(45%);
+  }
+  .not-found button {
+    color: rgb(112, 180, 138);
+    border: 1px solid rgb(112, 180, 138);
+    background: transparent;
+  }
+  .not-found button:hover {
+    background: rgb(112, 180, 138);
+    color: whitesmoke;
+    transition: 0.3s ease;
+    transform: scale(1.05);
+  }
+}
+@media screen and (max-width: 425px) {
+  .not-found {
+    width: 100%;
+    margin-top: 30%;
+  }
+  .not-found img {
+    width: 100%;
+  }
+  .not-found div {
+    margin-top: 50px;
+  }
+}
+
+.main {
+  width: 100%;
+}
+@media screen and (max-width: 425px) {
+  .main .latest {
+    display: none;
+  }
+}
+
+.stats {
+  width: 100%;
+}
+.stats .back-icon {
+  padding: 10px;
+  border: 1px solid rgb(219, 217, 217);
+  border-radius: 30px;
+}
+.stats ul {
+  justify-content: space-between;
+}
+
+.app-container {
+  font-family: rubik;
+  width: 90%;
+  transform: translateX(5%);
+  color: rgb(93, 126, 105);
+  position: relative;
+}
+.app-container a {
+  text-decoration: none;
+  color: rgb(112, 180, 138);
+}
+.app-container .error {
+  text-align: center;
+}
+.app-container .error p {
+  margin-top: 30px;
+}
+.app-container .error .icon {
+  font-size: 40px;
+  color: rgb(112, 180, 138);
+}
+.app-container ul li {
+  display: inline-flex;
+  list-style: none;
+}
+.app-container button {
+  padding: 16px;
+  font-family: rubik;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 768px) {
+  .app-container button {
+    margin-right: 10px;
+  }
+}
+.app-container input {
+  display: block;
+  margin: 10px auto;
+  padding: 15px;
+  width: 62%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(219, 217, 217);
+  font-family: rubik;
+}
+.app-container .more-btn {
+  background-color: transparent;
+  color: whitesmoke;
+}
+.app-container .step-2 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  width: 100%;
+  transition: 0.4s ease;
+  text-align: center;
+}
+.app-container .step-2 .forest {
+  width: 100%;
+  border-radius: 10px;
+}
+.app-container .step-2 .dd-tree {
+  width: 35px;
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 40px;
+  margin-top: -20px;
+}
+.app-container .step-2 button {
+  padding-inline: 30px;
+  color: whitesmoke;
+  background: rgb(112, 180, 138);
+  border: 1px solid rgb(112, 180, 138);
+  margin: 10px auto;
+}
+.app-container .step-2 button .btn-icon {
+  margin-left: 20px;
+}
+.app-container .step-3 {
+  margin-top: 10%;
+  padding-block: 40px;
+  text-align: center;
+}
+.app-container .step-3 img {
+  width: 40%;
+}
+.app-container .step-3 button {
+  color: whitesmoke;
+  width: 72%;
+  background: rgb(112, 180, 138);
+  border: 1px solid rgb(112, 180, 138);
+}
+.app-container .hide {
+  gap: 10px;
+}
+@media screen and (max-width: 425px) {
+  .app-container .hide {
+    overflow-x: scroll;
+    overflow-y: visible;
+    height: auto;
+  }
+}
+.app-container .hide .nav-icon {
+  border: 1px solid whitesmoke;
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 20px;
+  position: absolute;
+  margin-top: 47%;
+  right: -10px;
+  z-index: 2;
+  box-shadow: 0 2px 3px 3px rgb(207, 202, 202);
+}
+.app-container .hide .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  width: 665px;
+  margin-top: -30px;
+}
+@media screen and (min-width: 768px) {
+  .app-container .hide .cards {
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 10px;
+  }
+}
+.app-container .hide .cards div {
+  margin-top: 40px;
+  background: whitesmoke;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+}
+.app-container .hide .cards div h3 {
+  color: rgb(20, 80, 43);
+}
+.app-container .hide .cards div .fav-icon {
+  position: absolute;
+  z-index: 4;
+  color: whitesmoke;
+  transform: scale(1.5);
+  transition: 0.3s ease;
+  right: 10px;
+}
+.app-container .hide .cards div .fav-icon:hover {
+  color: crimson;
+  transform: scale(1.3);
+  transition: 0.3s ease;
+}
+@media screen and (max-width: 425px) {
+  .app-container .hide .cards div {
+    margin-right: 10px;
+  }
+}
+.app-container .hide .cards div article {
+  padding: 15px;
+  font-size: 15px;
+}
+.app-container .hide .cards div article .time {
+  margin-top: 10px;
+}
+.app-container .hide img {
+  width: 100%;
+  border-radius: 10px;
+}
+.app-container .hide img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.app-container .hide aside {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.app-container .hide .time-icon {
+  color: rgb(112, 180, 138);
+  margin-right: 10px;
+}
